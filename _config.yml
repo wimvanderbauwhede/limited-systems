@@ -1,5 +1,4 @@
-title: Minimal theme
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Limited Systems
+description: Mostly about running Mastodon and Pleroma on low-resource boards such as the Raspberry Pi and the PYNQ-Z1.
+show_downloads: false
 theme: jekyll-theme-minimal
