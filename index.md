@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# How-Tos
+# Installation Write-ups
 
 These are just write-ups of notes I took during installation.
 
