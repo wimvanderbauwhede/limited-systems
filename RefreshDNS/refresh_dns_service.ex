@@ -7,37 +7,37 @@
 # Then refresh every half hour until the program is stopped
 # Program should stop when /tmp/refresh-dns-activated is removed
 #
-# Create executable file /opt/foo/teardown-refresh-dns.sh:
-
 # I have two domains. Leave the 2nd blank if you only have one.
 my_token_1 = "Your FreeMyIP token"
 my_domain_1 = "Your FreeMyIP domain"
 my_token_2 = ""
 my_domain_2 = ""
 
+# Create executable file stop_refresh_dns_service.sh:
 teardown =
 """
 #!/bin/bash
 echo "Tearing down refresh-dns ..."
 if [ -f /tmp/refresh-dns-activated ]; then
-    rm /tmp/refresh-dns-activated
+	rm /tmp/refresh-dns-activated
 else
-    echo "Refresh DNS service is not running"
+	echo "Refresh DNS service is not running"
 fi
 """
 
+# The systemd service looks like this"
 service =
 """
 [Unit]
-Description=Setup foo
-#After=network.target
+Description=Setup Refresh DNS service
+Requires=network.target 
+After=pleroma.service network.target
 
 [Service]
-Type=oneshot
-ExecStart=/opt/foo/setup-foo.sh
-RemainAfterExit=true
-ExecStop=/opt/foo/teardown-foo.sh
-StandardOutput=journal
+User=pi
+WorkingDirectory=/home/pi/RefreshDNS
+ExecStart=/home/pi/RefreshDNS/refresh_dns_service.ex
+ExecStop =/home/pi/RefreshDNS/stop_refresh_dns_service.sh
 
 [Install]
 WantedBy=multi-user.target
