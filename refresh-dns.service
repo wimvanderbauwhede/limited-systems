@@ -1,0 +1,17 @@
+[Unit]
+Description=Setup Refresh DNS service
+Requires=network.target 
+After=pleroma.service network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/RefreshDNS
+ExecStart=/home/pi/RefreshDNS/refresh_dns_service.ex
+ExecStop =/home/pi/RefreshDNS/stop_refresh_dns_service.sh
+#KillMode=process
+#Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+
