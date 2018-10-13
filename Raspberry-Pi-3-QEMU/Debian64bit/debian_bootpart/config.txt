@@ -1,0 +1,10 @@
+# Switch the CPU from ARMv7 into ARMv8 (aarch64) mode
+arm_control=0x200
+
+enable_uart=1
+
+device_tree=bcm2837-rpi-3-b.dtb
+kernel=vmlinuz-4.14.0-3-arm64
+# For details on the initramfs directive, see
+# https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=10532
+initramfs initrd.img-4.14.0-3-arm64
