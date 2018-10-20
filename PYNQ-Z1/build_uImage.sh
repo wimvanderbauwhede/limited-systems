@@ -1,0 +1,1 @@
+PATH=/Users/wim/Desktop/ARM-OS-book/PYNQ-Z1/u-boot-xlnx/tools/:/opt/local/bin:/Volumes/xtools/armv8-rpi3-linux-gnueabihf/bin/:$PATH CPATH=~/Desktop/ARM-OS-book/PYNQ-Z1/linux-xlnx/usr/include/:~/Desktop/ARM-OS-book/PYNQ-Z1/linux-xlnx/usr/include/arm-linux-gnueabihf make j=8 UIMAGE_LOADADDR=0x8000 uImage
