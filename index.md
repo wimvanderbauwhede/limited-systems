@@ -17,6 +17,10 @@ Short tutorials on running Linux for Raspberry Pi 3 on [QEMU, a generic and open
 * [Debian "buster" for Raspberry Pi 3 on QEMU](https://github.com/wimvanderbauwhede/limited-systems/wiki/Debian-%22buster%22-for-Raspberry-Pi-3-on-QEMU)
 * [Raspbian "stretch" for Raspberry Pi 3 on QEMU](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
 
+## Building a custom Linux kernel for your Arm board
+
+* A short tutorial on how to build [a custom Linux kernel for the Xilinx PYNQ Z1 Arm board](https://github.com/wimvanderbauwhede/limited-systems/wiki/Building-a-Linux-kernel-for-the--Xilinx-PYNQ-Z1-Arm-board).
+
 ### Limited Systems
 
 The name is taken from _Limited Systems Vehicle_, a type of ship in Iain M. Banks's Culture series.
