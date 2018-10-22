@@ -19,7 +19,7 @@ Short tutorials on running Linux for Raspberry Pi 3 on [QEMU, a generic and open
 
 ## Building a custom Linux kernel for your Arm board
 
-* A short tutorial on how to build [a custom Linux kernel for the Xilinx PYNQ Z1 Arm board](https://github.com/wimvanderbauwhede/limited-systems/wiki/Building-a-Linux-kernel-for-the--Xilinx-PYNQ-Z1-Arm-board). 
+* A short tutorial on how to build [a custom Linux kernel for the Xilinx PYNQ Z1 Arm board](https://github.com/wimvanderbauwhede/limited-systems/wiki/Building-a-Linux-kernel-for-the--Xilinx-PYNQ-Z1-Arm-board). <!-- -->
 
 ### Limited Systems
 
