@@ -21,6 +21,10 @@ Short tutorials on running Linux for Raspberry Pi 3 on [QEMU, a generic and open
 
 * A short tutorial on how to build [a custom Linux kernel for the Xilinx PYNQ Z1 Arm board](https://github.com/wimvanderbauwhede/limited-systems/wiki/Building-a-Linux-kernel-for-the--Xilinx-PYNQ-Z1-Arm-board). <!-- -->
 
+## OpenCL on the Raspberry Pi 3
+
+* A short tutorial on how to build the [Portable Computing Langue OpenCL implementation](https://github.com/wimvanderbauwhede/limited-systems/wiki/Installing-OpenCL--on-the-Raspberry-Pi-3) on Raspbian.
+
 ### Limited Systems
 
 The name is taken from _Limited Systems Vehicle_, a type of ship in Iain M. Banks's Culture series.
