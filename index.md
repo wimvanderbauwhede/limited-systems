@@ -2,6 +2,12 @@
 layout: default
 ---
 
+## Getting started 
+
+If you would like to run your own servie but are not familiar with networking, Linux, command line etc, this guide provide an introduction. 
+
+* [First steps to running a web service on a Raspberry Pi](https://github.com/wimvanderbauwhede/limited-systems/wiki/First-steps-to-running-a-web-service-on-a-Raspberry-Pi)
+
 ## Installation Write-ups
 
 These are just write-ups of notes I took during installation.
