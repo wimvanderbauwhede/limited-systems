@@ -4,9 +4,13 @@ layout: default
 
 ## Getting started 
 
-If you would like to run your own servie but are not familiar with networking, Linux, command line etc, this guide provide an introduction. 
+If you would like to run your own service but are not familiar with networking, Linux, command line etc, this guide provide an introduction. 
 
 * [First steps to running a web service on a Raspberry Pi](https://github.com/wimvanderbauwhede/limited-systems/wiki/First-steps-to-running-a-web-service-on-a-Raspberry-Pi)
+
+And if you wonder about the resource usage of a Fediverse instance, this might be of interest:
+
+* [A simple model for network data size and disk space usage of a fediverse instance](https://github.com/wimvanderbauwhede/limited-systems/wiki/A-simple-model-for-network-data-size-and-disk-space-usage-of-a-fediverse-instance)
 
 ## Installation Write-ups
 
