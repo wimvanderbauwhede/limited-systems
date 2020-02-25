@@ -25,7 +25,12 @@ our $V=0;
 my %opts=();
 getopt('hvf:', \%opts);
 if (exists $opts{'h'}){
-    die "$0 [-v] [-h] [-f <path to file with list of apps to control>]\n";
+    die "Usage: $0 [-v] [-h] [-f <path to file with list of apps to control>]
+By default the script will look for a file called 'ws-switch-mon.cfg';
+You can provide your own name with the '-f' option.
+If it can't find any configuration file, it will control the following apps:\n\n\t".
+    join("\n\t", @apps_to_control)."\n".
+    "With the -v option, the script prints out what it's doing.\n";
 }
 
 if (exists $opts{'v'}){
