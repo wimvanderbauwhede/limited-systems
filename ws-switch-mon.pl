@@ -141,12 +141,12 @@ for my $app (sort keys %{$pids_in_stoplist}) {
     $all_pids_in_stoplist->{$app}=[$pids_str,$app_ws];
     if ($app_ws eq $current_ws) {
         say "kill -s CONT $pids_str"." ($app)"  if $V;
-         system "kill -s CONT $pid" unless $DUMMY;
+         system "kill -s CONT $pids_str" unless $DUMMY;
     } else {
         if ($app_ws eq $old_ws) {
             say "Switched away from workspace for app ($app_ws)" if $V;
             say "kill -s STOP $pids_str"." ($app)" if $V;
-            system "kill -s STOP $pid" unless $DUMMY;
+            system "kill -s STOP $pids_str" unless $DUMMY;
         } else {
 # Else it means we switched from another ws to the current one
         say  "switched from another workspace ($old_ws) to the current one ($current_ws), leave $app alone" if $V;
@@ -170,16 +170,21 @@ sub get_all_pids_for_app { (my $pid)=@_;
     my $all_pids_for_app=[];
     my $ps_line = `ps xao pid,comm  --no-headers | grep $pid`;
     chomp $ps_line;
+    $ps_line=~s/^\s+//;
     # prints out $pid $app_name
     # split and get these 
     ($pid,my $app_name) = split(/\s+/,$ps_line);
+    say "'$ps_line' => $app_name" if $V;
     my @ps_lines =`ps xao pid,comm  --no-headers | grep $app_name`;
+    
     for my $ps_line (@ps_lines) {
         chomp $ps_line;
-        (my $pid,my $m_app_name) = split(/\s+/,$ps_line);
+        $ps_line=~s/^\s+//;
+        (my $cpid,my $m_app_name) = split(/\s+/,$ps_line);
+        say "'$ps_line' => $cpid, $m_app_name ($app_name)" if $V;
         if ($m_app_name eq $app_name) {
-            say $pid if $V;
-            push @{$all_pids_for_app}, $pid;
+            say $cpid if $V;
+            push @{$all_pids_for_app}, $cpid;
         }
     }
     return $all_pids_for_app;
