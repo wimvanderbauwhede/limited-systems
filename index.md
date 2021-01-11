@@ -16,7 +16,7 @@ And if you wonder about the resource usage of a Fediverse instance, this might b
 
 These are just write-ups of notes I took during installation.
 
-* [Pleroma and Mastodon on the Raspberry Pi 3](https://github.com/wimvanderbauwhede/limited-systems/wiki/Pleroma-and-Mastodon-on-the-Raspberry-Pi-3)
+* [Pleroma on the Raspberry Pi 3](https://github.com/wimvanderbauwhede/limited-systems/wiki/Pleroma-on-the-Raspberry-Pi-3)
 * [Pleroma on the PYNQ-Z1](https://github.com/wimvanderbauwhede/limited-systems/wiki/Pleroma-on-the-PYNQ-Z1)
 * [Hacking the Pleroma: Elixir, Phoenix and a bit of ActivityPub](https://github.com/wimvanderbauwhede/limited-systems/wiki/Hacking-the-Pleroma:-Elixir,-Phoenix-and-a-bit-of-ActivityPub)
 
